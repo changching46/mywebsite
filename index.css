@@ -1,0 +1,434 @@
+*{
+    box-sizing: border-box;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #FFF8D7;
+    margin: 0px;
+}
+
+header{
+    background-color:#FFD306 ;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+    font-size: 32px;
+
+}
+
+nav{
+    background-color:  #FFED97;
+    text-align: center;
+    font-family: Arial;
+}
+
+nav a{
+    padding: 14px 16px;
+    display: inline-block;
+    color: #EAC100;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: #FFE153;
+    color: white;
+}
+
+
+footer{
+    background-color: #FFE153;
+    color: 	#844200;
+    text-align: center;
+    padding: 10px;
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0px;
+    border-radius: 15px;
+    font-size:22px;
+    color: #9F5000;
+}
+
+/*個人資料*/
+h2{
+    color: #844200;
+    padding: 10px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.imagestyle1{
+    border-radius:50%;
+    width: 360px;
+    height: 360px;
+    margin-left: 60px;
+    padding: 10px;
+
+}
+
+.textstyle1{  
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    padding-top: 50px;
+
+}
+
+.textstyle2{
+    margin:-45px 0px 10px 110px;
+    clear: both;
+}
+
+/*社群連結*/
+ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding-right:40px;
+    gap: 0;
+}
+
+li{
+    list-style: none;
+    color: #FFD306;
+    margin: 0 -5px;
+}
+
+ul a{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+.fa-brands,
+.fa-regular {
+    font-size: 44px;
+    color: #BB5E00;
+}
+
+ul a:hover .fa-brands,
+ul a:hover .fa-regular {
+    color: var(--color);
+}
+
+li:nth-child(1){
+    --color:#FFD306;
+}
+
+li:nth-child(2){
+    --color:#FFD306;
+}
+
+li:nth-child(3){
+    --color:#FFD306;
+}
+
+li:nth-child(4){
+    --color:#FFD306;
+}
+
+
+/*個人能力*/
+.textstyle3{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+    margin-left: auto; 
+}
+
+.textstyle3_1{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-top: 10px;
+    align-items: flex-start;
+    line-height: 2.5;
+}
+
+
+
+/*進度條*/
+.skill-col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    gap: 10px;
+}
+
+
+.skill-line{
+    display: flex;
+    background-color: 	#ffee97a7;
+    height: 10px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.skill-line::after{
+    content: "";
+    display: flex;
+    background: linear-gradient(90deg,#FFD306,#D26900);
+    height: 10px;
+    border-radius: 10px;
+    animation: line-percentage 3s ease;
+    animation-fill-mode: forwards;
+}
+
+
+.skill-line-1::after {
+    animation-name: line-percentage1;
+  }
+@keyframes line-percentage1{
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skill-line-2::after {
+    animation-name: line-percentage2;
+  }
+@keyframes line-percentage2{
+    0%{ width: 0%;}
+    100%{width: 70%;}
+}
+
+.skill-line-3::after {
+    animation-name: line-percentage3;
+  }
+@keyframes line-percentage3{
+    0%{ width: 0%;}
+    100%{width: 72%;}
+}
+
+.skill-line-4::after {
+    animation-name: line-percentage4;
+  }
+@keyframes line-percentage4{
+    0%{ width: 0%;}
+    100%{width: 65%;}
+}
+
+.skill-line-5::after {
+    animation-name: line-percentage5;
+  }
+@keyframes line-percentage5{
+    0%{ width: 0%;}
+    100%{width: 88%;}
+}
+
+.skill-line-6::after {
+    animation-name: line-percentage6;
+  }
+@keyframes line-percentage6{
+    0%{ width: 0%;}
+    100%{width: 90%;}
+}
+
+.skill-line-7::after {
+    animation-name: line-percentage7;
+  }
+@keyframes line-percentage7{
+    0%{ width: 0%;}
+    100%{width: 63%;}
+}
+
+.skill-line-8::after {
+    animation-name: line-percentage8;
+  }
+@keyframes line-percentage8{
+    0%{ width: 0%;}
+    100%{width:82%;}
+}
+
+/*課程活動-管理學*/
+
+.container {
+    display: flex;
+    align-items: center; 
+    flex-direction: row;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 50%;
+    position: relative;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 20px;
+ 
+  }
+  
+  /* Hide the images by default */
+  .singleSlides1 ,.singleSlides2 ,.singleSlides3,.singleSlides4,.singleSlides5{
+    display:none;
+  }
+
+  .imagestyle2{
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10%;
+    padding: 5px;
+    border: 5px double #FFD306;
+  }
+
+  .left{
+    float: left;
+  }
+  
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    user-select: none;
+  }
+
+  .prev{
+    left: -20px;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: -20px;
+  }
+
+  .fa-solid{
+    color: #FFED97;
+    size: 20px;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 25px;
+    position: absolute;
+    justify-content: center;
+    margin-top: 10px;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot1, .dot2 ,.dot3,.dot4,.dot5 {
+    cursor: pointer;
+    height: 5px;
+    width: 5px;
+    margin: 10px 0;
+    background-color: #d2690062;
+    border-radius: 50%;
+    display:inline-block;
+    text-align: left;
+    transition: background-color 0.6s ease;
+  }
+
+  .dot_container{
+    text-align: center;
+  }
+
+  .active, .dot1:hover ,.dot2:hover,.dot3:hover,.dot4:hover,.dot5:hover{
+    background-color:	#D26900;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.textstyle4{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+/*競賽參與*/
+
+.prev2, .next2 {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    user-select: none;
+  }
+
+.prev2{
+left: -20px;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+right: -20px;
+}
+.textstyle5{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+/*興趣愛好*/
+
+.container01 {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.container01_1{
+    border: 5px dotted #FFD306;
+    border-radius: 5%;
+}
+
+.imagestyle3{
+    width: 80%;
+    object-fit: cover;
+    border-radius: 10%;
+    padding: 15px 0;
+  }
+
+  .textstyle6{
+    display: flex;
+    justify-content:flex-start;
+    margin:10px
+
+}
+
+  
+
+/*配合裝置*/
+@media screen and (max-width:800px){
+    article{
+        float: none;
+        width: 100%;
+    }
+
+    .card{
+        padding: 10px;
+        margin: 15px 0px;
+    }
+
+    img{
+        max-width: 100%;
+        height: 90%;
+    }
+}
